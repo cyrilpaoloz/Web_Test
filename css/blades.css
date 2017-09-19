@@ -1,0 +1,41 @@
+.blade {
+  color: white;
+  z-index: 2;
+  position: absolute;
+  background: url(../assets/dark-triangles.png);
+  background-repeat: repeat;
+  background-color: rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  padding: 15px;
+  top: -200px;
+  transition: top 1s ease;
+}
+.blade.active {
+  top: 50px;
+}
+
+.blade-hidden {
+  visibility: hidden;
+}
+
+/*Second Blade Section!!!*/
+
+.blade_projects {
+  color: white;
+  z-index: 2;
+  position: absolute;
+  background: url(../assets/dark-triangles.png);
+  background-repeat: repeat;
+  background-color: rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  padding: 15px;
+  top: -400px;
+  transition: top 1s ease;
+}
+.blade_projects.active {
+  top: 50px;
+}
+
+.blade_projects-hidden {
+  visibility: hidden;
+}

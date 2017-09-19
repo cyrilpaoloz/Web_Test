@@ -1,0 +1,101 @@
+
+
+footer {
+  position: absolute;
+  height: 100vh;
+}
+
+footer .footer{
+  color: white;
+  z-index: 2;
+  position: absolute;
+  transition: bottom 1s ease;
+  bottom: -50px;
+  width: 100%;
+  background-color:black;
+}
+footer .footer.active {
+  bottom: 0px;
+}
+
+#model-footer ul {
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+  z-index: 2;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.model-link {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    color: gray;
+    z-index: 2;
+}
+.model-link.active, .model-link:hover {
+    color: white;
+}
+footer .diagonal {
+  border-width: 0 0 150px 1920px;
+  border-style: solid;
+  border-color: transparent transparent black;
+  position: absolute;
+  bottom: 0;
+}
+
+#footer-slider.pos0 {
+    -webkit-transform: translateX(-150%) skewX(-50deg);
+    transform: translateX(-150%) skewX(-50deg);
+}
+#footer-slider.pos1 {
+    -webkit-transform: translateX(0) skewX(-50deg);
+    transform: translateX(0) skewX(-50deg);
+}
+#footer-slider.pos2 {
+    -webkit-transform: translateX(100%) skewX(-50deg);
+    transform: translateX(100%) skewX(-50deg);
+}
+#footer-slider.pos3 {
+    -webkit-transform: translateX(200%) skewX(-50deg);
+    transform: translateX(200%) skewX(-50deg);
+}
+#footer-slider.pos4 {
+    -webkit-transform: translateX(300%) skewX(-50deg);
+    transform: translateX(300%) skewX(-50deg);
+}
+#footer-slider.pos5 {
+    -webkit-transform: translateX(400%) skewX(-50deg);
+    transform: translateX(400%) skewX(-50deg);
+}
+#footer-slider.pos6 {
+    -webkit-transform: translateX(500%) skewX(-50deg);
+    transform: translateX(500%) skewX(-50deg);
+}
+#footer-slider.pos7 {
+    -webkit-transform: translateX(600%) skewX(-50deg);
+    transform: translateX(600%) skewX(-50deg);
+}
+#footer-slider.pos8 {
+    -webkit-transform: translateX(700%) skewX(-50deg);
+    transform: translateX(700%) skewX(-50deg);
+}
+#footer-slider.pos9 {
+    -webkit-transform: translateX(800%) skewX(-50deg);
+    transform: translateX(800%) skewX(-50deg);
+}
+
+#footer-slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100%/9);
+    height: 30px;
+    background-color: rgba(255,0,0,.5);
+    will-change: transform;
+    -webkit-transform: translateX(0) skewX(-50deg);
+    transform: translateX(0) skewX(-50deg);
+    transition: -webkit-transform 500ms 0ms ease;
+    transition: transform 500ms 0ms ease;
+    z-index: 1;
+}

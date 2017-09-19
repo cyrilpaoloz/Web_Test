@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="js/classie.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/EffectComposer.js"></script>
+    <script src="postprocessing/RenderPass.js"></script>
+    <script src="postprocessing/MaskPass.js"></script>
+    <script src="postprocessing/ShaderPass.js"></script>
+    <script src="postprocessing/CopyShader.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/navbar.css" rel="stylesheet" type="text/css">
+    <link href="css/viewport.css" rel="stylesheet" type="text/css">
+    <link href="css/blades.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <title>Cyril Zabala</title>
+  </head>
+  <body>
+    <nav>
+      <div id="brand" class="nav-item">
+        <span>Cyril Zabala</span>
+      </div>
+
+      <ul>
+        <li class="nav-item" show-blade="works">Projects</li>
+        <li class="nav-item" show-blade="research">About</li>
+        <li class="nav-item" show-blade="contact">Contact</li>
+        <li class="nav-item" show-blade="models">Models</li>
+      </ul>
+    </nav>
+    <main>
+      <section class="blade_projects" id="works">
+        <h2>MY <div id ="red"> PROJECTS </div></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis neque augue, egestas vel bibendum a, auctor quis magna. Curabitur ullamcorper felis quis porttitor malesuada. Mauris congue porta cursus. Donec vel rutrum sem, tincidunt vulputate turpis. Vivamus vel leo dui. Vestibulum non mattis turpis, id cursus ipsum. Pellentesque fringilla enim ut tempus hendrerit. Curabitur egestas diam quis erat molestie, ac mattis ipsum tempor. Sed quis quam in orci malesuada dapibus. Duis ullamcorper interdum ante sed laoreet. Maecenas malesuada efficitur sollicitudin.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis neque augue, egestas vel bibendum a, auctor quis magna. Curabitur ullamcorper felis quis porttitor malesuada. Mauris congue porta cursus. Donec vel rutrum sem, tincidunt vulputate turpis. Vivamus vel leo dui. Vestibulum non mattis turpis, id cursus ipsum. Pellentesque fringilla enim ut tempus hendrerit. Curabitur egestas diam quis erat molestie, ac mattis ipsum tempor. Sed quis quam in orci malesuada dapibus. Duis ullamcorper interdum ante sed laoreet. Maecenas malesuada efficitur sollicitudin.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis neque augue, egestas vel bibendum a, auctor quis magna. Curabitur ullamcorper felis quis porttitor malesuada. Mauris congue porta cursus. Donec vel rutrum sem, tincidunt vulputate turpis. Vivamus vel leo dui. Vestibulum non mattis turpis, id cursus ipsum. Pellentesque fringilla enim ut tempus hendrerit. Curabitur egestas diam quis erat molestie, ac mattis ipsum tempor. Sed quis quam in orci malesuada dapibus. Duis ullamcorper interdum ante sed laoreet. Maecenas malesuada efficitur sollicitudin.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis neque augue, egestas vel bibendum a, auctor quis magna. Curabitur ullamcorper felis quis porttitor malesuada. Mauris congue porta cursus. Donec vel rutrum sem, tincidunt vulputate turpis. Vivamus vel leo dui. Vestibulum non mattis turpis, id cursus ipsum. Pellentesque fringilla enim ut tempus hendrerit. Curabitur egestas diam quis erat molestie, ac mattis ipsum tempor. Sed quis quam in orci malesuada dapibus. Duis ullamcorper interdum ante sed laoreet. Maecenas malesuada efficitur sollicitudin.</p>
+      </section>
+      <section class="blade" id="research">
+        <h2>ABOUT ME</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis neque augue, egestas vel bibendum a, auctor quis magna. Curabitur ullamcorper felis quis porttitor malesuada. Mauris congue porta cursus. Donec vel rutrum sem, tincidunt vulputate turpis. Vivamus vel leo dui. Vestibulum non mattis turpis, id cursus ipsum. Pellentesque fringilla enim ut tempus hendrerit. Curabitur egestas diam quis erat molestie, ac mattis ipsum tempor. Sed quis quam in orci malesuada dapibus. Duis ullamcorper interdum ante sed laoreet. Maecenas malesuada efficitur sollicitudin.</p>
+      </section>
+      <section class="blade" id="contact">
+        <h2>GET IN TOUCH</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis neque augue, egestas vel bibendum a, auctor quis magna. Curabitur ullamcorper felis quis porttitor malesuada. Mauris congue porta cursus. Donec vel rutrum sem, tincidunt vulputate turpis. Vivamus vel leo dui. Vestibulum non mattis turpis, id cursus ipsum. Pellentesque fringilla enim ut tempus hendrerit. Curabitur egestas diam quis erat molestie, ac mattis ipsum tempor. Sed quis quam in orci malesuada dapibus. Duis ullamcorper interdum ante sed laoreet. Maecenas malesuada efficitur sollicitudin.</p>
+      </section>
+      <section class="blade blade-hidden" footer="model-footer" id="models"></section>
+    </main>
+    <figure>
+      <!-- <div id="gradient"></div> -->
+      <div class="model-cover active" id="model-1">
+        <h3>Model 1</h3>
+        <p>Put whatever you want here</p>
+        <img src="./assets/covers/backgroundScene1HD.jpg"></img>
+        <button class="model-view" model="plus_v4.js">view</button>
+      </div>
+      <div class="model-cover" id="model-2">
+        <h3>Model 2</h3>
+        <p>However you like this to look</p>
+        <img src="./assets/covers/backgroundScene2HD.jpg"></img>
+        <button class="model-view" model="monkey_sample.js">view</button>
+      </div>
+      <div class="model-cover" id="model-3">
+        <h3>Model 3</h3>
+        <p>Write your own CSS to make this look cool</p>
+        <img src="./assets/covers/backgroundScene3HD.jpg"></img>
+        <button class="model-view" model="monkey_sample.js">view</button>
+      </div>
+      <div class="model-cover" id="model-4">
+        <h3>Model 4</h3>
+        <p>Write your own CSS to make this look cool</p>
+        <img src="./assets/covers/backgroundScene4HD.jpg"></img>
+        <button class="model-view" model="monkey_sample.js">view</button>
+      </div>
+      <div class="model-cover" id="model-5">
+        <h3>Model 5</h3>
+        <p>Write your own CSS to make this look cool</p>
+        <img src="./assets/covers/backgroundScene5HD.jpg"></img>
+        <button class="model-view" model="monkey_sample.js">view</button>
+      </div>
+      <div class="model-cover" id="model-6">
+        <h3>Model 6</h3>
+        <p>Write your own CSS to make this look cool</p>
+        <img src="./assets/covers/backgroundScene6HD.jpg"></img>
+        <button class="model-view" model="monkey_sample.js">view</button>
+      </div>
+      <div class="model-cover" id="model-7">
+        <h3>Model 7</h3>
+        <p>Write your own CSS to make this look cool</p>
+        <img src="./assets/covers/backgroundScene7HD.jpg"></img>
+        <button class="model-view" model="monkey_sample.js">view</button>
+      </div>
+      <div class="model-cover" id="model-8">
+        <h3>Model 8</h3>
+        <p>Write your own CSS to make this look cool</p>
+        <img src="./assets/covers/backgroundScene8HD.jpg"></img>
+        <button class="model-view" model="monkey_sample.js">view</button>
+      </div>
+      <div class="model-cover" id="model-9">
+        <h3>Model 9</h3>
+        <p>Write your own CSS to make this look cool</p>
+        <img src="./assets/covers/backgroundScene9HD.jpg"></img>
+        <button class="model-view" model="monkey_sample.js">view</button>
+      </div>
+      <div id="viewport" class="active"><!--THREE JS DIV --></div>
+    </figure>
+    <footer>
+      <section class="footer active" id="default-footer"><h4>#Drag mouse for effect</h4></section>
+      <section class="footer" id="model-footer">
+        <ul>
+          <li class="model-link active" slider-pos="pos1" model-cover="model-1">Model.01</li>
+          <li class="model-link" slider-pos="pos2" model-cover="model-2">Model.02</li>
+          <li class="model-link" slider-pos="pos3" model-cover="model-3">Model.03</li>
+          <li class="model-link" slider-pos="pos4" model-cover="model-4">Model.04</li>
+          <li class="model-link" slider-pos="pos5" model-cover="model-5">Model.05</li>
+          <li class="model-link" slider-pos="pos6" model-cover="model-6">Model.06</li>
+          <li class="model-link" slider-pos="pos7" model-cover="model-7">Model.07</li>
+          <li class="model-link" slider-pos="pos8" model-cover="model-8">Model.08</li>
+          <li class="model-link" slider-pos="pos9" model-cover="model-9">Model.09</li>
+        </ul>
+        <div id="footer-slider" class="pos1"></div>
+      </section>
+      <div class="diagonal"></div>
+    </footer>
+  </body>
+</html>
